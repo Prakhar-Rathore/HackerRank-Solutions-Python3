@@ -63,7 +63,6 @@ if __name__ == "__main__":
     # if 1:
         query = takeCommand().lower()
 
-        # Logic for executing tasks based on query
         if 'wikipedia' in query:
             speak('Searching Wikipedia...')
             query = query.replace("wikipedia", "")
@@ -83,5 +82,5 @@ if __name__ == "__main__":
 
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
-            speak(f"Sir, the time is {strTime}")
+            speak(f"Sir, the time is {str(Time)}")
   
